@@ -308,12 +308,12 @@ for username in accounts:
     log.info(f'Starting by ID: {username}')
     count = 0
     insta.login(username, 'OnlyFans@20')
-"""     k = 3  # int(input('What to do:\n1. Listing\n2. DM\n3. Comments\n'))
+    """ k = 3  # int(input('What to do:\n1. Listing\n2. DM\n3. Comments\n'))
     if k == 2:
         insta.bulkDM(int(input("Enter intial point of user: ")))
     elif k == 3: """
-count = insta.comment(count)
-log.info(f'Commented on {count} posts from "{username} account')
-sleep(1)
-insta.logout()
+    count = insta.comment(count)
+    log.info(f'Commented on {count} posts from "{username} account')
+    sleep(1)
+    insta.logout()
 insta.driver.close()
